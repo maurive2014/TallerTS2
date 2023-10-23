@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container-fluid mt-0 p-3 bg-info text-black">
+        <div class="row">
+            <div class="col-1 p-0">
+                <img style="max-width:70%" src="./tv.png" alt="Avatar">
+            </div>
+            <div class="d-flex justify-content-center p-3">
+                <h4>TV Series</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-6 col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                        </tr>
+                    </thead>
+                    <tbody id="series"></tbody>
+                </table>
+                <div class="row content-end">
+                    <div class="d-flex justify-content-start">Seasons average:&nbsp;</div>
+                    <div class="d-flex justify-content-start" id="average"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12" id="seriesCard"></div>
+        </div>
+    </div>
+    <script type="module" src="./scripts/serie.js" ></script>
+    <script type="module" src="./scripts/data.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
